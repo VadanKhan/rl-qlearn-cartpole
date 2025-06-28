@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "VadanKhan", email = "vadankhan1@gmail.com"},
 ]
-dependencies = []
+dependencies = ["numpy>=2.3.1", "gym>=0.26.2", "matplotlib>=3.10.3", "ipykernel>=6.29.5", "setuptools>=80.9.0"]
 requires-python = "==3.12.*"
 readme = "README.md"
 license = {text = "MIT"}
@@ -13,3 +13,8 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[dependency-groups]
+dev = [
+    "setuptools>=80.9.0",
+]
