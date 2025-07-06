@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:dc95d3a48e842e3beb57dc2d41d282a6b98327051e3195eb9b8f60b4e8b6655c"
+content_hash = "sha256:d4e46196451dafa62c811d16a274c5a3cfda79bff628473d0614e05523e4ea04"
 
 [[metadata.targets]]
 requires_python = ">=3.11,<3.12"
@@ -191,7 +191,7 @@ files = [
 
 [[package]]
 name = "gym"
-version = "0.25.2"
+version = "0.26.2"
 requires_python = ">=3.6"
 summary = "Gym: A universal API for reinforcement learning environments"
 groups = ["default"]
@@ -203,7 +203,7 @@ dependencies = [
     "numpy>=1.18.0",
 ]
 files = [
-    {file = "gym-0.25.2.tar.gz", hash = "sha256:c8323f4c6f37363710b519742a0094316deddc9d8fc9e3f6deac08d6da47150c"},
+    {file = "gym-0.26.2.tar.gz", hash = "sha256:e0d882f4b54f0c65f203104c24ab8a38b039f1289986803c7d02cdbe214fbcc4"},
 ]
 
 [[package]]
@@ -214,6 +214,21 @@ groups = ["default"]
 files = [
     {file = "gym-notices-0.0.8.tar.gz", hash = "sha256:ad25e200487cafa369728625fe064e88ada1346618526102659b4640f2b4b911"},
     {file = "gym_notices-0.0.8-py3-none-any.whl", hash = "sha256:e5f82e00823a166747b4c2a07de63b6560b1acb880638547e0cabf825a01e463"},
+]
+
+[[package]]
+name = "gym"
+version = "0.26.2"
+extras = ["classic_control"]
+requires_python = ">=3.6"
+summary = "Gym: A universal API for reinforcement learning environments"
+groups = ["default"]
+dependencies = [
+    "gym==0.26.2",
+    "pygame==2.1.0",
+]
+files = [
+    {file = "gym-0.26.2.tar.gz", hash = "sha256:e0d882f4b54f0c65f203104c24ab8a38b039f1289986803c7d02cdbe214fbcc4"},
 ]
 
 [[package]]
@@ -559,6 +574,16 @@ marker = "implementation_name == \"pypy\""
 files = [
     {file = "pycparser-2.22-py3-none-any.whl", hash = "sha256:c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc"},
     {file = "pycparser-2.22.tar.gz", hash = "sha256:491c8be9c040f5390f5bf44a5b07752bd07f56edf992381b05c701439eec10f6"},
+]
+
+[[package]]
+name = "pygame"
+version = "2.1.0"
+requires_python = ">=3.6"
+summary = ""
+groups = ["default"]
+files = [
+    {file = "pygame-2.1.0.tar.gz", hash = "sha256:232e51104db0e573221660d172af8e6fc2c0fda183c5dbf2aa52170f29aa9ec9"},
 ]
 
 [[package]]
